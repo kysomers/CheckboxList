@@ -20,7 +20,7 @@ class CheckBoxButton: UIButton {
     var setupDone = false
     let fontSize : CGFloat = 18
     let smallMargin : CGFloat = 8
-    var buttonColor = UIColor.flatRedColor()
+    var buttonColor = UIColor()
     var buttonFont = UIFont()
     
     /**

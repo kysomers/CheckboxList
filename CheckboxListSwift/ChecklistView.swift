@@ -14,7 +14,7 @@ public class ChecklistView: UIView {
     let boxMargin : CGFloat = 10
     var buttons : [CheckBoxButton] = []
     var boxNames : [String] = []
-    var buttonColor = UIColor.flatRedColor()
+    var buttonColor = UIColor()
     
     /**
     Sets up the checklist view
