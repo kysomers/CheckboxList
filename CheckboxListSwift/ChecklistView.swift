@@ -23,20 +23,20 @@ public class ChecklistView: UIView {
     - parameter isExclusive:   whether or not only one box can be checked at a time
     */
     
-    func setColor(theColor : UIColor){
+    public func setColor(theColor : UIColor){
         buttonColor = theColor
         for aButton in buttons{
             aButton.setColor(theColor)
         }
     }
     
-    func setShape(shape : String){
+    public func setShape(shape : String){
         for aButton in buttons{
             aButton.setShape(shape)
         }
     }
     
-    func checkboxSetup(checkboxNames: [String], font: UIFont, color : UIColor, isExclusive : Bool){
+    public func checkboxSetup(checkboxNames: [String], font: UIFont, color : UIColor, isExclusive : Bool){
         self.backgroundColor = UIColor(white: 1, alpha: 0.65)
         self.layer.cornerRadius = 6
         buttons = []
@@ -83,7 +83,7 @@ public class ChecklistView: UIView {
     
     - returns: an array of strings showing what has been checked
     */
-    func getOutput() -> [String]{
+    public func getOutput() -> [String]{
         var i : Int = 0
         var outputArray : [String] = []
         for aName in boxNames{

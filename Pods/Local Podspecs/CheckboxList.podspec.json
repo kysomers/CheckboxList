@@ -1,0 +1,24 @@
+{
+  "name": "CheckboxList",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "summary": "CheckboxList allows checkboxes for simple user input when given a short list of options.",
+  "requires_arc": true,
+  "version": "0.1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Kyle Somers": "kyledouglassomers@gmail.com"
+  },
+  "homepage": "https://github.com/kysomers/CheckboxList",
+  "source": {
+    "git": "https://github.com/kysomers/CheckboxList.git",
+    "tag": "0.1.0"
+  },
+  "frameworks": "UIKit",
+  "source_files": "CheckboxList/**/*.{swift}",
+  "resources": "CheckboxList/**/*.{png}"
+}

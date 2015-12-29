@@ -8,7 +8,7 @@ s.summary = "CheckboxList allows checkboxes for simple user input when given a s
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = “0.2.0”
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -23,7 +23,8 @@ s.homepage = "https://github.com/kysomers/CheckboxList"
 
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/kysomers/CheckboxList.git", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/kysomers/CheckboxList.git",:tag => "#{s.version}" ,  :commit => "8e359aec6eaaf046c53edf52049ad067a6a8ca50"}
+
 
 
 # 7
@@ -31,8 +32,9 @@ s.framework = "UIKit"
 
 
 # 8
-s.source_files = "CheckboxListSwift/**/*.{swift}"
+s.source_files = "CheckboxListSwift/*.{swift}"
+
 
 # 9
-s.resources = "CheckboxListSwift/**/*.{png}"
+s.resources = "CheckboxListSwift/*.{png}"
 end
