@@ -1,5 +1,5 @@
 PODS:
-  - CheckboxList (0.1.0)
+  - CheckboxList (0.2.0)
 
 DEPENDENCIES:
   - CheckboxList (from `~/Documents/Libraries/CheckboxListSwift`)
