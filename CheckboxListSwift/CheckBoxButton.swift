@@ -3,7 +3,7 @@
 //  SoKi
 //
 //  Created by Kyle Somers on 11/1/15.
-//  Copyright © 2015 Siddharth Atre. All rights reserved.
+//  Copyright © 2015 Kyle Somers. All rights reserved.
 //
 
 import UIKit
