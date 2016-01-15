@@ -15,23 +15,23 @@ This is meant to be implemented in storyboard. Set up a view and make sure it su
 To do the setup, the function you'll be using is:
 
 
-#func checkboxSetup(checkboxNames: [String], font: UIFont, color : UIColor, isExclusive : Bool)
+######func checkboxSetup(checkboxNames: [String], font: UIFont, color : UIColor, isExclusive : Bool)
 
 Where checkboxNames are the names of the boxes on the list, font is the font of the text, color will give the color of the text, and isExclusive will define if exactly one box will be checked or if any number of boxes can be checked. It is after calling this function that you should update the hight of your autolayout constraint
 
 Two other functions you may find useful for appearance are
 
-#func setColor(theColor : UIColor)
+######func setColor(theColor : UIColor)
 
 and
 
-#func setShape(shape : String)
+######func setShape(shape : String)
 
 Which respectively set the color of the text/boxes and the shape of the boxes. The default box shape is square, though an input of "circle" or "round" will make the boxes round.
 
 Finally, and maybe most importantly, is the function used to get the output, which is just
 
-#func getOutput() -> [String]
+######func getOutput() -> [String]
 
 This will return an array with all of the strings of the options that were selected by the user when this function is called.
 
