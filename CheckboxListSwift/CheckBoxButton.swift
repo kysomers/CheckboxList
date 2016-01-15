@@ -108,9 +108,13 @@ class CheckBoxButton: UIButton {
     }
     
     func setShape( shape : NSString){
-        if shape.lowercaseString == "circle"{
+        if shape.lowercaseString == "circle" || shape.lowercaseString == "round"{
             checkedImage = UIImage(named: "CheckedCircle")
             uncheckedImage = UIImage(named: "UncheckedCircle")
+        }
+        else{
+            checkedImage = UIImage(named: "CheckedBox")
+            uncheckedImage = UIImage(named: "UncheckedBox")
         }
         if isOn{
             checkBox.image = checkedImage
