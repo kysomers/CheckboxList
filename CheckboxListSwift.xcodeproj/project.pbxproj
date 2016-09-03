@@ -14,13 +14,11 @@
 		8372980E1C0E17480002166D /* UncheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980C1C0E17480002166D /* UncheckedCircle.png */; };
 		837298111C0E174C0002166D /* CheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980F1C0E174C0002166D /* CheckedBox.png */; };
 		837298121C0E174C0002166D /* UncheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 837298101C0E174C0002166D /* UncheckedBox.png */; };
-		CC0F3826AF4D169A7446776E /* Pods_CheckboxListSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB31A15B6564B6AC063A5F9 /* Pods_CheckboxListSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00BE3E3F0351022FB1FDA45F /* Pods-CheckboxListSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckboxListSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckboxListSwift/Pods-CheckboxListSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3AF40E2123621122EDA6DFC2 /* Pods-CheckboxListSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckboxListSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckboxListSwift/Pods-CheckboxListSwift.release.xcconfig"; sourceTree = "<group>"; };
-		6CB31A15B6564B6AC063A5F9 /* Pods_CheckboxListSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckboxListSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837297FB1C0E08280002166D /* CheckboxListSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CheckboxListSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837297FE1C0E08280002166D /* CheckboxListSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckboxListSwift.h; sourceTree = "<group>"; };
 		837298001C0E08280002166D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0F3826AF4D169A7446776E /* Pods_CheckboxListSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +94,6 @@
 		8971863B142275BBB55579C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CB31A15B6564B6AC063A5F9 /* Pods_CheckboxListSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
