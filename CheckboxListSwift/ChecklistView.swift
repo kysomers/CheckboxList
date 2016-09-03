@@ -53,8 +53,8 @@ public class ChecklistView: UIView {
             yIndex += curCheckBox.frame.height + 2 * boxMargin
             buttons.append(curCheckBox)
             if (isExclusive == true){
-                curCheckBox.removeTarget(curCheckBox, action: "toggle:", forControlEvents: .TouchUpInside)
-                curCheckBox.addTarget(self, action: "exclusiveToggle:", forControlEvents: .TouchUpInside)
+                curCheckBox.removeTarget(curCheckBox, action: Selector("toggle:"), forControlEvents: .TouchUpInside)
+                curCheckBox.addTarget(self, action: #selector(ChecklistView.exclusiveToggle(_:)), forControlEvents: .TouchUpInside)
                 exclusiveToggle(buttons[0])
             }
             
@@ -90,7 +90,7 @@ public class ChecklistView: UIView {
             if buttons[i].isOn == true{
                 outputArray.append(aName)
             }
-            i++
+            i += 1
         }
         
         return outputArray

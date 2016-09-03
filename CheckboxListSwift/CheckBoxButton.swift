@@ -33,7 +33,7 @@ class CheckBoxButton: UIButton {
         if setupDone == false{
             self.addSubview(nameLabel)
             self.addSubview(checkBox)
-            self.addTarget(self, action: "toggle:", forControlEvents: .TouchUpInside)
+            self.addTarget(self, action: #selector(CheckBoxButton.toggle(_:)), forControlEvents: .TouchUpInside)
             setupDone = true
         }
         

@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		837297FF1C0E08280002166D /* CheckboxListSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 837297FE1C0E08280002166D /* CheckboxListSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		837298081C0E163B0002166D /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837298061C0E163B0002166D /* ChecklistView.swift */; settings = {ASSET_TAGS = (); }; };
-		837298091C0E163B0002166D /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837298071C0E163B0002166D /* CheckBoxButton.swift */; settings = {ASSET_TAGS = (); }; };
-		8372980D1C0E17480002166D /* CheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980B1C0E17480002166D /* CheckedCircle.png */; settings = {ASSET_TAGS = (); }; };
-		8372980E1C0E17480002166D /* UncheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980C1C0E17480002166D /* UncheckedCircle.png */; settings = {ASSET_TAGS = (); }; };
-		837298111C0E174C0002166D /* CheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980F1C0E174C0002166D /* CheckedBox.png */; settings = {ASSET_TAGS = (); }; };
-		837298121C0E174C0002166D /* UncheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 837298101C0E174C0002166D /* UncheckedBox.png */; settings = {ASSET_TAGS = (); }; };
+		837298081C0E163B0002166D /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837298061C0E163B0002166D /* ChecklistView.swift */; };
+		837298091C0E163B0002166D /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837298071C0E163B0002166D /* CheckBoxButton.swift */; };
+		8372980D1C0E17480002166D /* CheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980B1C0E17480002166D /* CheckedCircle.png */; };
+		8372980E1C0E17480002166D /* UncheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980C1C0E17480002166D /* UncheckedCircle.png */; };
+		837298111C0E174C0002166D /* CheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 8372980F1C0E174C0002166D /* CheckedBox.png */; };
+		837298121C0E174C0002166D /* UncheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 837298101C0E174C0002166D /* UncheckedBox.png */; };
 		CC0F3826AF4D169A7446776E /* Pods_CheckboxListSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB31A15B6564B6AC063A5F9 /* Pods_CheckboxListSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,12 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837298031C0E08280002166D /* Build configuration list for PBXNativeTarget "CheckboxListSwift" */;
 			buildPhases = (
-				C4BB6752DD4D4EF492DC759E /* Check Pods Manifest.lock */,
+				C4BB6752DD4D4EF492DC759E /* [CP] Check Pods Manifest.lock */,
 				837297F61C0E08280002166D /* Sources */,
 				837297F71C0E08280002166D /* Frameworks */,
 				837297F81C0E08280002166D /* Headers */,
 				837297F91C0E08280002166D /* Resources */,
-				AD9739B6259AA1E3C52CDB10 /* Copy Pods Resources */,
+				AD9739B6259AA1E3C52CDB10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,14 +183,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AD9739B6259AA1E3C52CDB10 /* Copy Pods Resources */ = {
+		AD9739B6259AA1E3C52CDB10 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,14 +198,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckboxListSwift/Pods-CheckboxListSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C4BB6752DD4D4EF492DC759E /* Check Pods Manifest.lock */ = {
+		C4BB6752DD4D4EF492DC759E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
