@@ -3,7 +3,7 @@
 //  SoKi
 //
 //  Created by Kyle Somers on 11/1/15.
-//  Copyright © 2015 Siddharth Atre. All rights reserved.
+//  Copyright © 2015 Kyle Somers. All rights reserved.
 //
 
 import UIKit
@@ -108,9 +108,13 @@ class CheckBoxButton: UIButton {
     }
     
     func setShape( shape : NSString){
-        if shape.lowercaseString == "circle"{
+        if shape.lowercaseString == "circle" || shape.lowercaseString == "round"{
             checkedImage = UIImage(named: "CheckedCircle")
             uncheckedImage = UIImage(named: "UncheckedCircle")
+        }
+        else{
+            checkedImage = UIImage(named: "CheckedBox")
+            uncheckedImage = UIImage(named: "UncheckedBox")
         }
         if isOn{
             checkBox.image = checkedImage
