@@ -28,12 +28,12 @@ class CheckBoxButton: UIButton {
     
     - parameter boxName: the name associated with the checkbox
     */
-    func setName(boxName : String){
+    func setName(_ boxName : String){
         
         if setupDone == false{
             self.addSubview(nameLabel)
             self.addSubview(checkBox)
-            self.addTarget(self, action: #selector(CheckBoxButton.toggle(_:)), forControlEvents: .TouchUpInside)
+            self.addTarget(self, action: #selector(CheckBoxButton.toggle(_:)), for: .touchUpInside)
             setupDone = true
         }
         
@@ -43,10 +43,10 @@ class CheckBoxButton: UIButton {
         nameLabel.sizeToFit()
         
         checkBox.image = uncheckedImage
-        checkBox.frame = CGRectMake(0, 0, nameLabel.frame.height, nameLabel.frame.height)
+        checkBox.frame = CGRect(x: 0, y: 0, width: nameLabel.frame.height, height: nameLabel.frame.height)
         
-        nameLabel.frame.origin = CGPointMake(checkBox.frame.width + smallMargin, 0)
-        self.frame.size = CGSizeMake(checkBox.frame.width + smallMargin + nameLabel.frame.width, nameLabel.frame.height)
+        nameLabel.frame.origin = CGPoint(x: checkBox.frame.width + smallMargin, y: 0)
+        self.frame.size = CGSize(width: checkBox.frame.width + smallMargin + nameLabel.frame.width, height: nameLabel.frame.height)
         
         
         
@@ -58,7 +58,7 @@ class CheckBoxButton: UIButton {
     
     - parameter sender: always self
     */
-    func toggle(sender: AnyObject){
+    func toggle(_ sender: AnyObject){
         if isOn == true{
             turnOff()
         }
@@ -77,7 +77,7 @@ class CheckBoxButton: UIButton {
         nameLabel.sizeToFit()
         
         checkBox.image = checkedImage
-        checkBox.image = checkBox.image!.imageWithRenderingMode(.AlwaysTemplate)
+        checkBox.image = checkBox.image!.withRenderingMode(.alwaysTemplate)
         checkBox.tintColor = buttonColor
     }
     /**
@@ -85,11 +85,11 @@ class CheckBoxButton: UIButton {
     */
     func turnOff(){
         isOn = false
-        nameLabel.textColor = UIColor.blackColor()
+        nameLabel.textColor = UIColor.black
         //nameLabel.font = UIFont(name: "Avenir Next", size: fontSize)
         nameLabel.sizeToFit()
         checkBox.image = uncheckedImage
-        checkBox.tintColor = UIColor.blackColor()
+        checkBox.tintColor = UIColor.black
 
     }
     /**
@@ -97,18 +97,18 @@ class CheckBoxButton: UIButton {
     
     - parameter theColor: The color that you want to set that button to
     */
-    func setColor(theColor : UIColor){
+    func setColor(_ theColor : UIColor){
         buttonColor = theColor
         if isOn{
             nameLabel.textColor = buttonColor
             checkBox.image = checkedImage
-            checkBox.image = checkBox.image!.imageWithRenderingMode(.AlwaysTemplate)
+            checkBox.image = checkBox.image!.withRenderingMode(.alwaysTemplate)
             checkBox.tintColor = buttonColor
         }
     }
     
-    func setShape( shape : NSString){
-        if shape.lowercaseString == "circle" || shape.lowercaseString == "round"{
+    func setShape(_ shape : String){
+        if shape.lowercased() == "circle" || shape.lowercased() == "round"{
             checkedImage = UIImage(named: "CheckedCircle")
             uncheckedImage = UIImage(named: "UncheckedCircle")
         }
@@ -118,7 +118,7 @@ class CheckBoxButton: UIButton {
         }
         if isOn{
             checkBox.image = checkedImage
-            checkBox.image = checkBox.image!.imageWithRenderingMode(.AlwaysTemplate)
+            checkBox.image = checkBox.image!.withRenderingMode(.alwaysTemplate)
             checkBox.tintColor = buttonColor
         }
         else{

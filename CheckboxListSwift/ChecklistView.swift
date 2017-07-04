@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ChecklistView: UIView {
+open class ChecklistView: UIView {
 
     var height : CGFloat = 0
     let boxMargin : CGFloat = 10
@@ -23,20 +23,20 @@ public class ChecklistView: UIView {
     - parameter isExclusive:   whether or not only one box can be checked at a time
     */
     
-    public func setColor(theColor : UIColor){
+    open func setColor(_ theColor : UIColor){
         buttonColor = theColor
         for aButton in buttons{
             aButton.setColor(theColor)
         }
     }
     
-    public func setShape(shape : String){
+    open func setShape(_ shape : String){
         for aButton in buttons{
             aButton.setShape(shape)
         }
     }
     
-    public func checkboxSetup(checkboxNames: [String], font: UIFont, color : UIColor, isExclusive : Bool){
+    open func checkboxSetup(_ checkboxNames: [String], font: UIFont, color : UIColor, isExclusive : Bool){
         self.backgroundColor = UIColor(white: 1, alpha: 0.65)
         self.layer.cornerRadius = 6
         buttons = []
@@ -49,12 +49,12 @@ public class ChecklistView: UIView {
             curCheckBox.buttonFont = font
             self.addSubview(curCheckBox)
             curCheckBox.setName(aName)
-            curCheckBox.frame.origin = CGPointMake(boxMargin, yIndex)
+            curCheckBox.frame.origin = CGPoint(x: boxMargin, y: yIndex)
             yIndex += curCheckBox.frame.height + 2 * boxMargin
             buttons.append(curCheckBox)
             if (isExclusive == true){
-                curCheckBox.removeTarget(curCheckBox, action: #selector(CheckBoxButton.toggle(_:)), forControlEvents: .TouchUpInside)
-                curCheckBox.addTarget(self, action: #selector(ChecklistView.exclusiveToggle(_:)), forControlEvents: .TouchUpInside)
+                curCheckBox.removeTarget(curCheckBox, action: #selector(CheckBoxButton.toggle(_:)), for: .touchUpInside)
+                curCheckBox.addTarget(self, action: #selector(ChecklistView.exclusiveToggle(_:)), for: .touchUpInside)
                 exclusiveToggle(buttons[0])
             }
             
@@ -70,7 +70,7 @@ public class ChecklistView: UIView {
     
     - parameter sender: the button pressed
     */
-    func exclusiveToggle(sender: AnyObject){
+    func exclusiveToggle(_ sender: AnyObject){
         for aButton in buttons{
             aButton.turnOff()
         }
@@ -83,7 +83,7 @@ public class ChecklistView: UIView {
     
     - returns: an array of strings showing what has been checked
     */
-    public func getOutput() -> [String]{
+    open func getOutput() -> [String]{
         var i : Int = 0
         var outputArray : [String] = []
         for aName in boxNames{
