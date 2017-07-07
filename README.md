@@ -35,6 +35,6 @@ Finally, and maybe most importantly, is the function used to get the output, whi
 
 This will return an array with all of the strings of the options that were selected by the user when this function is called.
 
-###Pods
+### Pods
 It exists on cocoapods and can be imported with the name "CheckboxList."
 
